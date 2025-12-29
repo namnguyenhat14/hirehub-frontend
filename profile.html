@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | HireHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">HireHub</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="network.html">Network</a>
+    <a href="profile.html" class="active">Profile</a>
+  </nav>
+</header>
+
+<main class="profile">
+  <div class="profile-header">
+    <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-pic">
+    <div>
+      <h2 id="displayName">Your Name</h2>
+      <p id="displayTitle">Your Title</p>
+      <button id="editBtn" class="primary-btn">✏️ Edit Profile</button>
+      <button id="connectBtn" class="secondary-btn">🤝 Connect</button>
+    </div>
+  </div>
+
+  <form id="profileForm" class="hidden">
+    <label>Name: <input type="text" id="name" /></label>
+    <label>Title: <input type="text" id="title" /></label>
+    <label>Bio: <textarea id="bio"></textarea></label>
+    <button type="submit" class="primary-btn">Save</button>
+  </form>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
